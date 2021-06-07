@@ -3,7 +3,7 @@
     No numbers, return empty array.
 */
 
-const sum = (array: number[], target: number) => {
+export const sum = (array: number[], target: number) => {
     array.sort((a, b) => a - b);
     let left = 0;
     let right = array.length - 1;
@@ -20,3 +20,6 @@ const sum = (array: number[], target: number) => {
     }
     return [];
 }
+
+console.log(sum([3, 5, -4, 8, 11, 1, -1, 6], 10));
+console.log(sum( [4, 6, 1, -3], 3));
